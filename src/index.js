@@ -27,7 +27,7 @@ import packageData from "../package.json";
 window.onload = async () => {
     const initParams = {
         customPluginContext: [
-            //require.context("./plugins", true, /\.js/),
+            require.context("./plugins", true, /\.js/),
             getBasicPluginContext(),
             getSlidePluginContext(),
             getZoomPluginContext(),
