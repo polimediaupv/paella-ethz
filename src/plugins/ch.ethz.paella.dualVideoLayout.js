@@ -1,7 +1,6 @@
 import {
-    VideoLayout, 
-    getCookie, 
-    setCookie, 
+    VideoLayout,
+    utils,  
     CanvasButtonPosition
 } from 'paella-core';
 
@@ -11,6 +10,8 @@ import defaultIconSwitchSide from '../icons/icon_switch_side.svg';
 import defaultIconMaximize from '../icons/maximize.svg';
 import defaultIconClose from '../icons/close.svg';
 import defaultIconSideBySide from '../icons/icon_side_by_side.svg';
+
+const { getCookie, setCookie } = utils;
 
 let layout = 0;
 /**
@@ -24,11 +25,11 @@ const layouts = [
             {
                 content:null,
                 rect:[
-                    {aspectRatio:"16/9",width:560,height:315,top:218,left:712},
-                    {aspectRatio:"16/10",width:560,height:350,top:206,left:712},
-                    {aspectRatio:"4/3",width:560,height:420,top:173,left:712},
-                    {aspectRatio:"5/3",width:560,height:336,top:206,left:712},
-                    {aspectRatio:"5/4",width:560,height:448,top:160,left:712}
+                    {aspectRatio:"16/9",width:614,height:345,top:187,left:649},
+                    {aspectRatio:"16/10",width:614,height:384,top:167,left:649},
+                    {aspectRatio:"4/3",width:614,height:460,top:130,left:649},
+                    {aspectRatio:"3/2",width:614,height:409,top:155,left:649},
+                    {aspectRatio:"5/4",width:614,height:491,top:114,left:649}  
                 ],
                 visible:true,
                 layer:1
@@ -36,11 +37,11 @@ const layouts = [
             {
                 content:null,
                 rect:[
-                    {aspectRatio:"16/9",width:688,height:387,top:166,left:10},
-                    {aspectRatio:"16/10",width:688,height:430,top:148,left:10},
-                    {aspectRatio:"4/3",width:688,height:516,top:111,left:10},
-                    {aspectRatio:"5/3",width:690,height:414,top:154,left:10},
-                    {aspectRatio:"5/4",width:690,height:552,top:96,left:10}
+                    {aspectRatio:"16/9",width:614,height:345,top:187,left:16},
+                    {aspectRatio:"16/10",width:614,height:384,top:167,left:16},
+                    {aspectRatio:"4/3",width:614,height:460,top:130,left:16},
+                    {aspectRatio:"3/2",width:614,height:409,top:155,left:16},
+                    {aspectRatio:"5/4",width:614,height:491,top:114,left:16}
                 ],
                 visible:true,
                 layer:"1"
@@ -49,18 +50,18 @@ const layouts = [
         buttons: []
     },
 
-    // Second layout: PIP left
+    // Second layout: PIP
     {
-        id: "pip-left",
+        id: "pip",
         videos:[
             {
                 content:null,
                 rect:[
-                    {aspectRatio:"16/9",left:0,top:0,width:1280,height:720},
-                    {aspectRatio:"16/10",left:64,top:0,width:1152,height:720},
-                    {aspectRatio:"5/3",left:40,top:0,width:1200,height:720},
-                    {aspectRatio:"5/4",left:190,top:0,width:900,height:720},
-                    {aspectRatio:"4/3",left:160,top:0,width:960,height:720}
+                    {aspectRatio:"5/4",left:947,top:353,width:316,height:253},
+                    {aspectRatio:"3/2",left:947,top:373,width:316,height:210},
+                    {aspectRatio:"4/3",left:947,top:360,width:316,height:273},
+                    {aspectRatio:"16/10",left:947,top:380,width:316,height:198},
+                    {aspectRatio:"16/9",left:947,top:390,width:316,height:178}
                 ],
                 visible:true,
                 layer:1
@@ -68,43 +69,11 @@ const layouts = [
             {
                 content:null,
                 rect:[
-                    {aspectRatio:"16/9",left:50,top:470,width:350,height:197},
-                    {aspectRatio:"16/10",left:50,top:448,width:350,height:219},
-                    {aspectRatio:"5/3",left:50,top:457,width:350,height:210},
-                    {aspectRatio:"5/4",left:50,top:387,width:350,height:280},
-                    {aspectRatio:"4/3",left:50,top:404,width:350,height:262}
-                ],
-                visible:true,
-                layer:2
-            }
-        ],
-        buttons: []
-    },
-
-    // Third layout: PIP right
-    {
-        id: "pip-right",
-        videos: [
-            {
-                content:null,
-                rect:[
-                    {aspectRatio:"16/9",left:0,top:0,width:1280,height:720},
-                    {aspectRatio:"16/10",left:64,top:0,width:1152,height:720},
-                    {aspectRatio:"5/3",left:40,top:0,width:1200,height:720},
-                    {aspectRatio:"5/4",left:190,top:0,width:900,height:720},
-                    {aspectRatio:"4/3",left:160,top:0,width:960,height:720}
-                ],
-                visible:true,
-                layer:1
-            },
-            {
-                content:null,
-                rect:[
-                    {aspectRatio:"16/9",left:880,top:470,width:350,height:197},
-                    {aspectRatio:"16/10",left:880,top:448,width:350,height:219},
-                    {aspectRatio:"5/3",left:880,top:457,width:350,height:210},
-                    {aspectRatio:"5/4",left:880,top:387,width:350,height:280},
-                    {aspectRatio:"4/3",left:880,top:404,width:350,height:262}
+                    {aspectRatio:"5/4",left:35,top:8,width:874,height:699},
+                    {aspectRatio:"3/2",left:15,top:53,width:917,height:611},
+                    {aspectRatio:"4/3",left:26,top:25,width:894,height:670},
+                    {aspectRatio:"16/10",left:15,top:72,width:917,height:573},
+                    {aspectRatio:"16/9",left:15,top:101,width:917,height:515}
                 ],
                 visible:true,
                 layer:2
@@ -114,13 +83,13 @@ const layouts = [
     }
 ];
 
-function nextLayout(validContent) {
-    layout = (layout + 1) % layouts.length;
+function setPip(validContent) {
+    layout = 1;
     return currentLayout(validContent);
 }
 
-function setLayout(validContent, index) {
-    layout = index < layouts.length ? index : layout;
+function setSideBySide(validContent) {
+    layout = 0;
     return currentLayout(validContent);
 }
 
@@ -132,7 +101,7 @@ function currentLayout(validContent) {
 }
 
 export default class DualVideoLayout extends VideoLayout {
-    get identifier() { return "dual-video"; }
+    get identifier() { return "dual-video-ethz"; }
 
     async load() {
         let layoutIndex = getCookie('dualVideoLayoutIndex');
@@ -157,32 +126,21 @@ export default class DualVideoLayout extends VideoLayout {
         
         this.player.videoContainer.updateLayout();
     }
-    
-    switchMinimized() {
-        nextLayout(this._currentContent);
-        this.player.videoContainer.updateLayout();
-    }
 
     minimizeVideo(content) {
         let switchLayout = true;
-        if (content === this._currentContent[0]) {
+        if (content === this._currentContent[1]) {
             const v0 = this._currentContent[0];
             const v1 = this._currentContent[1];
             this._currentContent[0] = v1;
             this._currentContent[1] = v0;
-            switchLayout = false;
         }
-        if (layout === 1 && switchLayout) {
-            setLayout(this._currentContent, 2);
-        }
-        else {
-            setLayout(this._currentContent, 1);
-        }
+        setPip(this._currentContent);
         this.player.videoContainer.updateLayout();
     }
 
     setSideBySide() {
-        setLayout(this._currentContent, 0);
+        setSideBySide(this._currentContent);
         this.player.videoContainer.updateLayout();
     }
 
@@ -208,31 +166,19 @@ export default class DualVideoLayout extends VideoLayout {
             return [
                 // Swap
                 {
-                    icon: this.player.getCustomPluginIcon(this.name,"iconRotate") || defaultIconRotate,
+                    icon: this.player.getCustomPluginIcon(this.name,"iconMinimize") || defaultIconMinimize,
                     position: CanvasButtonPosition.LEFT,
-                    title: this.player.translate('Swap position of the videos'),
-                    ariaLabel: this.player.translate('Swap position of the videos'),
-                    click: () => {
-                        this.switchContent();
-                    }
-                },
-
-                // Minimize
-                {
-                    icon: this.player.getCustomPluginIcon(this.name,"iconMaximize") || defaultIconMaximize,
-                    position: CanvasButtonPosition.LEFT,
-                    title: this.player.translate('Maximize video'),
-                    ariaLabel: this.player.translate('Maximize video'),
+                    title: this.player.translate('Minimize video'),
+                    ariaLabel: this.player.translate('Minimize video'),
                     click: () => {
                         this.minimizeVideo(content);
-                        this.switchContent();
                     }
                 },
 
                 // Close
                 {
                     icon: this.player.getCustomPluginIcon(this.name,"iconClose") || defaultIconClose,
-                    position: CanvasButtonPosition.RIGHT,
+                    position: CanvasButtonPosition.LEFT,
                     title: this.player.translate('Close video'),
                     ariaLabel: this.player.translate('Close video'),
                     click: () => {
@@ -244,68 +190,26 @@ export default class DualVideoLayout extends VideoLayout {
         else {
             const result = [];
 
-            if (content === this.minimizedContent) {
-                result.push({
-                    icon: this.player.getCustomPluginIcon(this.name,"iconMaximize") || defaultIconMaximize,
-                    position: CanvasButtonPosition.LEFT,
-                    title: this.player.translate('Maximize video'),
-                    ariaLabel: this.player.translate('Maximize video'),
-                    click: () => {
-                        this.switchContent();
-                    }
-                });
+            result.push({
+                icon: this.player.getCustomPluginIcon(this.name, "iconSideBySide") || defaultIconSideBySide,
+                position: CanvasButtonPosition.LEFT,
+                title: this.player.translate('Minimize video'),
+                ariaLabel: this.player.translate('Minimize video'),
+                click: () => {
+                    this.setSideBySide();
+                }
+            });
 
-                result.push({
-                    icon: this.player.getCustomPluginIcon(this.name,"iconSwitchSide") || defaultIconSwitchSide,
-                    position: CanvasButtonPosition.LEFT,
-                    title: this.player.translate('Place the video on the other side of the screen'),
-                    ariaLabel: this.player.translate('Place the video on the other side of the screen'),
-                    click: () => {
-                        this.minimizeVideo(content);
-                    }
-                });
+            result.push({
+                icon: this.player.getCustomPluginIcon(this.name,"iconClose") || defaultIconClose,
+                position: CanvasButtonPosition.LEFT,
+                title: this.player.translate('Close video'),
+                ariaLabel: this.player.translate('Close video'),
+                click: () => {
+                    this.closeVideo(content);
+                }
+            });
 
-                result.push({
-                    icon: this.player.getCustomPluginIcon(this.name,"iconClose") || defaultIconClose,
-                    position: CanvasButtonPosition.RIGHT,
-                    title: this.player.translate('Close video'),
-                    ariaLabel: this.player.translate('Close video'),
-                    click: () => {
-                        this.closeVideo(content);
-                    }
-                });
-            }
-            else {
-                result.push({
-                    icon: this.player.getCustomPluginIcon(this.name,"iconMinimize") || defaultIconMinimize,
-                    position: CanvasButtonPosition.LEFT,
-                    title: this.player.translate('Minimize video'),
-                    ariaLabel: this.player.translate('Minimize video'),
-                    click: () => {
-                        this.switchContent();
-                    }
-                });
-
-                result.push({
-                    icon: this.player.getCustomPluginIcon(this.name,"iconSideBySide") || defaultIconSideBySide,
-                    position: CanvasButtonPosition.LEFT,
-                    title: this.player.translate('Put the videos side by side'),
-                    ariaLabel: this.player.translate('Put the videos side by side'),
-                    click: () => {
-                        this.setSideBySide();
-                    }
-                });
-
-                result.push({
-                    icon: this.player.getCustomPluginIcon(this.name,"iconClose") || defaultIconClose,
-                    position: CanvasButtonPosition.RIGHT,
-                    title: this.player.translate('Close video'),
-                    ariaLabel: this.player.translate('Close video'),
-                    click: () => {
-                        this.closeVideo(content);
-                    }
-                });
-            }
             return result;
         }
     }
