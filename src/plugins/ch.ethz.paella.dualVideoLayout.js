@@ -17,13 +17,13 @@ let layout = 0;
 /**
  * in pip mode, the minimized video is the second one
  */
-const layouts = [
+const layouts = {
     // First layout: side by side
-    {
+    "sideBySide": {
         id: "side-by-side",
         videos: [
             {
-                content:null,
+                content:"presentation",
                 rect:[
                     {aspectRatio:"16/9",width:614,height:345,top:187,left:649},
                     {aspectRatio:"16/10",width:614,height:384,top:167,left:649},
@@ -35,7 +35,7 @@ const layouts = [
                 layer:1
             },
             {
-                content:null,
+                content:"presenter",
                 rect:[
                     {aspectRatio:"16/9",width:614,height:345,top:187,left:16},
                     {aspectRatio:"16/10",width:614,height:384,top:167,left:16},
@@ -50,12 +50,12 @@ const layouts = [
         buttons: []
     },
 
-    // Second layout: PIP
-    {
-        id: "pip",
+    // Second layout: presentation maximized
+    "presentationMaximized": {
+        id: "presentation-maximized",
         videos:[
             {
-                content:null,
+                content:"presentation",
                 rect:[
                     {aspectRatio:"5/4",left:947,top:353,width:316,height:253},
                     {aspectRatio:"3/2",left:947,top:373,width:316,height:210},
@@ -67,7 +67,7 @@ const layouts = [
                 layer:1
             },
             {
-                content:null,
+                content:"presenter",
                 rect:[
                     {aspectRatio:"5/4",left:35,top:8,width:874,height:699},
                     {aspectRatio:"3/2",left:15,top:53,width:917,height:611},
@@ -80,21 +80,46 @@ const layouts = [
             }
         ],
         buttons: []
+    },
+
+    // Third layout: presenter maximized
+    "presenterMaximized": {
+        id: "presenter-maximized",
+        videos:[
+            {
+                content:"presentation",
+                rect:[
+                    {aspectRatio:"5/4",left:947,top:8,width:874,height:699},
+                    {aspectRatio:"3/2",left:947,top:53,width:917,height:611},
+                    {aspectRatio:"4/3",left:947,top:25,width:894,height:670},
+                    {aspectRatio:"16/10",left:947,top:72,width:917,height:573},
+                    {aspectRatio:"16/9",left:947,top:101,width:917,height:515}
+                ],
+                visible:true,
+                layer:1
+            },
+            {
+                content:"presenter",
+                rect:[
+                    {aspectRatio:"5/4",left:35,top:353,width:316,height:253},
+                    {aspectRatio:"3/2",left:15,top:373,width:316,height:210},
+                    {aspectRatio:"4/3",left:26,top:360,width:316,height:273},
+                    {aspectRatio:"16/10",left:15,top:380,width:316,height:198},
+                    {aspectRatio:"16/9",left:15,top:390,width:316,height:178}
+                ],
+                visible:true,
+                layer:2
+            }
+        ],
+        buttons: []
     }
-];
+};
 
-function setPip(validContent) {
-    layout = 1;
-    return currentLayout(validContent);
-}
-
-function setSideBySide(validContent) {
-    layout = 0;
-    return currentLayout(validContent);
-}
+let g_currentLayout = "sideBySide";
 
 function currentLayout(validContent) {
-    let selectedLayout = JSON.parse(JSON.stringify(layouts[layout]));
+    // Set the valid content from the current player configuration
+    let selectedLayout = JSON.parse(JSON.stringify(layouts[g_currentLayout]));
     selectedLayout.videos[0].content = validContent[0];
     selectedLayout.videos[1].content = validContent[1];
     return selectedLayout;
@@ -104,11 +129,11 @@ export default class DualVideoLayout extends VideoLayout {
     get identifier() { return "dual-video-ethz"; }
 
     async load() {
-        let layoutIndex = getCookie('dualVideoLayoutIndex');
-        if (layoutIndex !== "") {
-            layout = Number(layoutIndex);
+        let layoutName = getCookie('dualVideoLayout');
+        if (layoutName !== "" && Object.keys(layouts).indexOf(layoutName) !== -1) {
+            g_currentLayout = layoutName;
         }
-        this.player.log.debug("Dual video layout loaded");
+        this.player.log.debug("Dual video ETHZ layout loaded");
     }
 
     getValidStreams(streamData) {
@@ -117,41 +142,20 @@ export default class DualVideoLayout extends VideoLayout {
         return super.getValidStreams(streamData)
             .filter(stream => stream.length === 2);
     }
-    
-    switchContent() {
-        const v0 = this._currentContent[0];
-        const v1 = this._currentContent[1];
-        this._currentContent[0] = v1;
-        this._currentContent[1] = v0;
-        
-        this.player.videoContainer.updateLayout();
-    }
-
-    minimizeVideo(content) {
-        let switchLayout = true;
-        if (content === this._currentContent[1]) {
-            const v0 = this._currentContent[0];
-            const v1 = this._currentContent[1];
-            this._currentContent[0] = v1;
-            this._currentContent[1] = v0;
-        }
-        setPip(this._currentContent);
-        this.player.videoContainer.updateLayout();
-    }
 
     setSideBySide() {
-        setSideBySide(this._currentContent);
+        g_currentLayout = "sideBySide";
         this.player.videoContainer.updateLayout();
     }
 
-    get minimizedContent() {
-        // See layout structure
-        if (layout === 0) {
-            return "";
-        }
-        else {
-            return this._currentContent[1];
-        }
+    setPresentationMaximized() {
+        g_currentLayout = "presentationMaximized";
+        this.player.videoContainer.updateLayout();
+    }
+
+    setPresenterMaximized() {
+        g_currentLayout = "presenterMaximized";
+        this.player.videoContainer.updateLayout();
     }
 
     closeVideo(content) {
