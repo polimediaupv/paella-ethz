@@ -12,7 +12,7 @@
         "side": "left",
         "visible": true,
         "showHandler": true,
-        "hideHandlerOnMouseOut": true,
+        "hideHandlerOnMouseOut": false,
         "showRemainingProgress": true
     },
 
@@ -251,7 +251,7 @@
         },
 
         "es.upv.paella.slideMapProgressBarPlugin": {
-            "enabled": true,
+            "enabled": false,
             "markColor": {
                 "mouseOut": "#0A0A0A",
                 "mouseHover": "#A9A9A9"
