@@ -8,21 +8,22 @@ import getUserTrackingPluginContext from 'paella-user-tracking';
 import packageData from "../package.json";
 
 // Customized icons
-// import windowedIcon from "./icons/windowedIcon.svg";
-// import fullscreenIcon from "./icons/fullscreenIcon.svg";
-// import volumeHighIcon from "./icons/volumeHighIcon.svg";
-// import volumeMidIcon from "./icons/volumeMidIcon.svg";
-// import volumeLowIcon from "./icons/volumeLowIcon.svg";
-// import volumeMuteIcon from "./icons/volumeMuteIcon.svg";
-// import screenIcon from "./icons/screenIcon.svg";
-// import layoutIcon from "./icons/layoutIcon.svg";
-// import backwardIcon from "./icons/backwardIcon.svg";
-// import forwardIcon from "./icons/forwardIcon.svg";
-// import keyboardIcon from "./icons/keyboardIcon.svg";
-// import downloadIcon from "./icons/downloadIcon.svg";
-// import captionsIcon from "./icons/captionsIcon.svg";
-// import findCaptionsIcon from './icons/findCaptionsIcon.svg';
-// import slidesIcon from './icons/slidesIcon.svg';
+import BackwardIcon from "./icons/backward-10s-icon.svg";
+import ForwardIcon from "./icons/forward-10s-icon.svg";
+import CaptionsIcon from "./icons/captions-icon.svg";
+import CloseIcon from "./icons/close.svg";
+import FullscreenIcon from "./icons/fullscreen-icon.svg";
+import MaximizeIcon from "./icons/maximize.svg";
+import MinimizeIcon from "./icons/minimize.svg";
+import PlayIcon from "./icons/play-icon.svg";
+import SettingsIcon from "./icons/settings-icon.svg";
+import NextIcon from "./icons/slide-next-icon.svg";
+import PrevIcon from "./icons/slide-prev-icon.svg";
+import SlidesIcon from "./icons/slides-icon.svg";
+import VolumeHighIcon from "./icons/volume-base-icon.svg";
+import VolumeMidIcon from "./icons/volume-mid-icon.svg";
+import VolumeLowIcon from "./icons/volume-low-icon.svg";
+import VolumeMuteIcon from "./icons/volume-mute-icon.svg";
 
 window.onload = async () => {
     const initParams = {
@@ -57,14 +58,14 @@ window.onload = async () => {
         
        //// Customized icon tests
 		//// fullscreen 
-		//paella.addCustomPluginIcon("es.upv.paella.fullscreenButton","fullscreenIcon",fullscreenIcon);
+		paella.addCustomPluginIcon("es.upv.paella.fullscreenButton","fullscreenIcon",FullscreenIcon);
 		//paella.addCustomPluginIcon("es.upv.paella.fullscreenButton","windowedIcon",windowedIcon);
 
 		//// volume
-		//paella.addCustomPluginIcon("es.upv.paella.volumeButtonPlugin","volumeHighIcon",volumeHighIcon);
-		//paella.addCustomPluginIcon("es.upv.paella.volumeButtonPlugin","volumeMidIcon",volumeMidIcon);
-		//paella.addCustomPluginIcon("es.upv.paella.volumeButtonPlugin","volumeLowIcon",volumeLowIcon);
-		//paella.addCustomPluginIcon("es.upv.paella.volumeButtonPlugin","volumeMuteIcon",volumeMuteIcon);
+		paella.addCustomPluginIcon("es.upv.paella.volumeButtonPlugin","volumeHighIcon",VolumeHighIcon);
+		paella.addCustomPluginIcon("es.upv.paella.volumeButtonPlugin","volumeMidIcon",VolumeMidIcon);
+		paella.addCustomPluginIcon("es.upv.paella.volumeButtonPlugin","volumeLowIcon",VolumeLowIcon);
+		paella.addCustomPluginIcon("es.upv.paella.volumeButtonPlugin","volumeMuteIcon",VolumeMuteIcon);
 
 		//// quality selector
 		//paella.addCustomPluginIcon("es.upv.paella.qualitySelector","screenIcon",screenIcon);
@@ -76,10 +77,10 @@ window.onload = async () => {
 		//paella.addCustomPluginIcon("es.upv.paella.layoutSelector","layoutIcon",layoutIcon);
 
 		//// backward 30 segonds
-		//paella.addCustomPluginIcon("es.upv.paella.backwardButtonPlugin","backwardIcon",backwardIcon);
+		paella.addCustomPluginIcon("es.upv.paella.backwardButtonPlugin","backwardIcon",BackwardIcon);
 
 		//// forward 30 segonds
-		//paella.addCustomPluginIcon("es.upv.paella.forwardButtonPlugin","forwardIcon",forwardIcon);
+		paella.addCustomPluginIcon("es.upv.paella.forwardButtonPlugin","forwardIcon",ForwardIcon);
 
 		//// keyboard icon
 		//paella.addCustomPluginIcon("es.upv.paella.keyboardShortcutsHelp","keyboardIcon",keyboardIcon);
@@ -94,10 +95,10 @@ window.onload = async () => {
 		//paella.addCustomPluginIcon("es.upv.paella.findCaptionsPlugin","findCaptionsIcon",findCaptionsIcon);
 
 		//// captions icon
-		//paella.addCustomPluginIcon("es.upv.paella.captionsSelectorPlugin","captionsIcon",captionsIcon);
+		paella.addCustomPluginIcon("es.upv.paella.captionsSelectorPlugin","captionsIcon",CaptionsIcon);
 
        //// slides icon
-       //paella.addCustomPluginIcon("es.upv.paella.frameControlButtonPlugin","photoIcon",slidesIcon);
+       paella.addCustomPluginIcon("es.upv.paella.frameControlButtonPlugin","photoIcon",SlidesIcon);
     }
     catch (e) {
         console.error(e);

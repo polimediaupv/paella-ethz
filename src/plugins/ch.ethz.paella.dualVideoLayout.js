@@ -4,12 +4,10 @@ import {
     CanvasButtonPosition
 } from 'paella-core';
 
-import defaultIconRotate from '../icons/icon_rotate.svg';
-import defaultIconMinimize from '../icons/minimize-3.svg';
-import defaultIconSwitchSide from '../icons/icon_switch_side.svg';
+
+import defaultIconMinimize from '../icons/minimize.svg';
 import defaultIconMaximize from '../icons/maximize.svg';
 import defaultIconClose from '../icons/close.svg';
-import defaultIconSideBySide from '../icons/icon_side_by_side.svg';
 
 const { getCookie, setCookie } = utils;
 
@@ -101,11 +99,11 @@ const layouts = {
             {
                 content:null,
                 rect:[
-                    {aspectRatio:"5/4",left:349,top:8,width:847,height:699},
-                    {aspectRatio:"3/2",left:349,top:66,width:874,height:584},
-                    {aspectRatio:"4/3",left:349,top:32,width:874,height:656},
-                    {aspectRatio:"16/10",left:349,top:84,width:874,height:548},
-                    {aspectRatio:"16/9",left:349,top:112,width:874,height:493}
+                    {aspectRatio:"5/4",left:359,top:8,width:847,height:699},
+                    {aspectRatio:"3/2",left:359,top:66,width:874,height:584},
+                    {aspectRatio:"4/3",left:359,top:32,width:874,height:656},
+                    {aspectRatio:"16/10",left:359,top:84,width:874,height:548},
+                    {aspectRatio:"16/9",left:359,top:112,width:874,height:493}
                 ],
                 visible:true,
                 layer:2
