@@ -74,7 +74,7 @@ window.onload = async () => {
 		//paella.addCustomPluginIcon("es.upv.paella.playbackRateButton","screenIcon",screenIcon);
 
 		//// layout selector
-		//paella.addCustomPluginIcon("es.upv.paella.layoutSelector","layoutIcon",layoutIcon);
+		paella.addCustomPluginIcon("es.upv.paella.layoutSelector","layoutIcon",SettingsIcon);
 
 		//// backward 30 segonds
 		paella.addCustomPluginIcon("es.upv.paella.backwardButtonPlugin","backwardIcon",BackwardIcon);

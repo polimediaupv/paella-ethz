@@ -112,22 +112,20 @@
         "es.upv.paella.layoutSelector": {
             "enabled": true,
             "side": "right",
-            "order": 101,
-            "parentContainer": "videoContainer"
-        },
-
-        "es.upv.paella.playbackRateButton": {
-            "enabled": true,
-            "side": "right",
-            "order": 102,
-            "parentContainer": "videoContainer",
-            "rates": [0.75, 1, 1.5, 2]
+            "order": 101
         },
 
         "es.upv.paella.volumeButtonPlugin": {
             "enabled": true,
             "side": "left",
-            "order": 3
+            "order": 4
+        },
+
+        "es.upv.paella.playbackRateButton": {
+            "enabled": true,
+            "side": "left",
+            "order": 3,
+            "rates": [0.75, 1, 1.5, 2]
         },
 
         "es.upv.paella.forwardButtonPlugin": {
