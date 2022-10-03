@@ -10,7 +10,7 @@
         "showTotal": true,
         "parentContainer": "buttonArea",
         "side": "left",
-        "visible": true,
+        "visible": false,
         "showHandler": true,
         "hideHandlerOnMouseOut": false,
         "showRemainingProgress": true
@@ -112,31 +112,41 @@
         "es.upv.paella.layoutSelector": {
             "enabled": true,
             "side": "right",
-            "order": 101
+            "order": 101,
+            "menuTitle": "Video Layout"
         },
 
         "es.upv.paella.volumeButtonPlugin": {
             "enabled": true,
             "side": "left",
-            "order": 4
+            "order": 5
         },
 
         "es.upv.paella.playbackRateButton": {
             "enabled": true,
             "side": "left",
-            "order": 3,
-            "rates": [0.75, 1, 1.5, 2]
+            "order": 4,
+            "showIcon": false,
+            "rates": [0.75, 1, 1.5, 2],
+            "menuTitle": "Playback Rate"
         },
 
         "es.upv.paella.forwardButtonPlugin": {
             "enabled": true,
             "side": "left",
-            "order": 2
+            "order": 3
         },
 
         "es.upv.paella.backwardButtonPlugin": {
             "enabled": true,
             "side": "left",
+            "order": 2
+        },
+
+        "es.upv.paella.customTimeProgressIndicator": {
+            "enabled": true,
+            "textSize": "large",
+            "showTotal": true,
             "order": 1
         },
 
