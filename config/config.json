@@ -113,7 +113,8 @@
             "enabled": true,
             "side": "right",
             "order": 101,
-            "menuTitle": "Video Layout"
+            "menuTitle": "Video Layout",
+            "parentContainer": "settingsGroup"
         },
 
         "es.upv.paella.volumeButtonPlugin": {
@@ -191,7 +192,7 @@
         "es.upv.paella.qualitySelector": {
             "enabled": true,
             "side": "right",
-            "parentContainer": "videoContainer"
+            "parentContainer": "settingsGroup"
         },
 
         "es.upv.paella.audioSelector": {
@@ -205,7 +206,7 @@
         },
 
         "es.upv.paella.arrowSlidesNavigator": {
-            "enabled": true,
+            "enabled": false,
             "target": [
                 "presentation",
                 "presenter"
@@ -216,7 +217,8 @@
             "enabled": true,
             "order": 80,
             "description": "Keyboard Shortcuts",
-            "side": "right"
+            "side": "right",
+            "parentContainer": "settingsGroup"
         },
 
         "es.upv.paella.userEventTracker": {
@@ -266,6 +268,31 @@
             },
             "markWidth": 3,
             "drawBackground": false
+        },
+
+        "es.upv.paella.nextSlideNavigatorButton": {
+            "enabled": true,
+            "content": [
+                "presentation"
+            ],
+            "side": "left",
+            "order": 1
+        },
+
+        "es.upv.paella.prevSlideNavigatorButton": {
+            "enabled": true,
+            "content": [
+                "presentation"
+            ],
+            "side": "left",
+            "order": 0
+        },
+
+        "ch.ethz.paella.settingsButton": {
+            "enabled": true,
+            "groupName": "settingsGroup",
+            "side": "right",
+            "menuTitle": "Settings"
         }
     }
 }
