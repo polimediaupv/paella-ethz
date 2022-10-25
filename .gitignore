@@ -3,3 +3,5 @@ dist
 repository_test/repository/local-mp4
 
 .DS_Store
+
+/build
