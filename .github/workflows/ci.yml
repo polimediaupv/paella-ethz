@@ -1,0 +1,14 @@
+name: Build
+
+on: [pull_request, push]
+
+jobs:
+  main:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - run: npm ci
+      
+      - name: Build
+        run: npm run build
