@@ -8,8 +8,8 @@ import getUserTrackingPluginContext from 'paella-user-tracking';
 import packageData from "../package.json";
 
 // Customized icons
-import BackwardIcon from "./icons/backward-10s-icon.svg";
-import ForwardIcon from "./icons/forward-10s-icon.svg";
+import BackwardIcon from "./icons/backward-icon.svg";
+import ForwardIcon from "./icons/forward-icon.svg";
 import CaptionsIcon from "./icons/captions-icon.svg";
 import CloseIcon from "./icons/close.svg";
 import FullscreenIcon from "./icons/fullscreen-icon.svg";
