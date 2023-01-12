@@ -128,8 +128,8 @@
             "side": "left",
             "order": 4,
             "showIcon": false,
-            "rates": [0.75, 1, 1.5, 2],
-            "menuTitle": "Playback Rate"
+            "rates": [0.75, 1, 1.25, 1.5, 2],
+            "menuTitle": "Playback rate"
         },
 
         "es.upv.paella.forwardButtonPlugin": {
