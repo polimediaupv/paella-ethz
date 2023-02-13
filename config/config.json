@@ -17,8 +17,44 @@
     },
 
     "videoContainer": {
-        "overPlaybackBar": true
+        "overPlaybackBar": true,
+
+        "restorePlaybackRate": true,
+        "restoreVolume": true,
+        "restoreLastTime": {
+            "enabled": true,
+            "remainingSeconds": 5
+        },
+
+        "cookieConsentType": "necessary"
     },
+
+    "cookieConsent": [
+        {
+            "type": "necessary",
+            "title": "Necessary",
+            "description": "Cookies required for proper operation.",
+            "required": true
+        },
+        {
+            "type": "preferences",
+            "title": "Preferences",
+            "description": "Cookies used to store user preferences that can be configured in the application. If disabled, some of these features may not work properly.",
+            "required": false
+        },
+        {
+            "type": "analytical",
+            "title": "Analytical",
+            "description": "Cookies used to analyze user behavior and thus provide clues about future improvements in the application.",
+            "required": false
+        },
+        {
+            "type": "marketing",
+            "title": "Marketing",
+            "description": "Cookies used to better tailor ads to user preferences.",
+            "required": false
+        }
+    ],
 
     "plugins": {
         "es.upv.paella.singleVideo": {
@@ -27,6 +63,11 @@
                 { "id": "presenter", "content": ["presenter"], "icon": "present-mode-2.svg", "title": "Presenter" },
                 { "id": "presentation", "content": ["presentation"], "icon": "present-mode-1.svg", "title": "Presentation" },
                 { "id": "presenter-2", "content": ["presenter-2"], "icon": "present-mode-1.svg", "title": "Presentation" }
+            ],
+            "dualVideoContentIds": [
+                "presenter-presentation-dynamic",
+                "presenter-2-presentation-dynamic",
+                "presenter-presenter-2-dynamic"
             ]
         },
         "es.upv.paella.dualVideo": {
@@ -46,7 +87,7 @@
         },
         
         "ch.ethz.paella.dualVideoLayout": {
-            "enabled": true,
+            "enabled": false,
             "validContent": [
                 { "id": "presenter-presentation", "content": ["presentation", "presenter"], "icon": "present-mode-3.svg", "title": "Presenter and presentation" },
                 { "id": "presenter-2-presentation", "content": ["presentation", "presenter-2"], "icon": "present-mode-3.svg", "title": "Presenter and presentation" },
