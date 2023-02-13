@@ -53,6 +53,15 @@
                 { "id": "presenter-presenter-2", "content": ["presenter","presenter-2"], "icon": "present-mode-3.svg", "title": "Presenter and presentation" }
             ]
         },
+
+        "es.upv.paella.dualVideoDynamic": {
+            "enabled": true,
+            "validContent": [
+                { "id": "presenter-presentation-dynamic", "content": ["presentation","presenter"], "icon": "present-mode-3.svg", "title": "Presenter and presentation" },
+                { "id": "presenter-2-presentation-dynamic", "content": ["presenter-2","presentation"], "icon": "present-mode-3.svg", "title": "Presenter and presentation" },
+                { "id": "presenter-presenter-2-dynamic", "content": ["presenter","presenter-2"], "icon": "present-mode-3.svg", "title": "Presenter and presentation" }
+            ]
+        },
         
         "es.upv.paella.hlsVideoFormat": {
             "enabled": true,
@@ -94,33 +103,26 @@
         "es.upv.paella.playPauseButton": {
             "enabled": true,
             "order": 0,
-            "description": "Play and pause button"
-        },
-        
-        "es.upv.paella.frameControlButtonPlugin": {
-            "enabled": true,
-            "side": "right",
-            "order": 102
+            "description": "Play and pause button",
+            "tabIndex": 1
         },
 
-        "es.upv.paella.fullscreenButton": {
-            "enabled": true,
-            "side": "right",
-            "order": 103
-        },
-
-        "es.upv.paella.layoutSelector": {
-            "enabled": true,
-            "side": "right",
-            "order": 101,
-            "menuTitle": "Video Layout",
-            "parentContainer": "settingsGroup"
-        },
-
-        "es.upv.paella.volumeButtonPlugin": {
+        "es.upv.paella.backwardButtonPlugin": {
             "enabled": true,
             "side": "left",
-            "order": 5
+            "order": 2,
+            "time": 10,
+            "suffix": false,
+            "tabIndex": 2
+        },
+
+        "es.upv.paella.forwardButtonPlugin": {
+            "enabled": true,
+            "side": "left",
+            "order": 3,
+            "time": 10,
+            "suffix": false,
+            "tabIndex": 3
         },
 
         "es.upv.paella.playbackRateButton": {
@@ -129,23 +131,45 @@
             "order": 4,
             "showIcon": false,
             "rates": [0.75, 1, 1.5, 2],
-            "menuTitle": "Playback Rate"
+            "menuTitle": "Playback Rate",
+            "tabIndex": 4
         },
 
-        "es.upv.paella.forwardButtonPlugin": {
+        "es.upv.paella.volumeButtonPlugin": {
             "enabled": true,
             "side": "left",
-            "order": 3,
-            "time": 10,
-            "suffix": false
+            "order": 5,
+            "tabIndex": 5
         },
 
-        "es.upv.paella.backwardButtonPlugin": {
+        "ch.ethz.paella.settingsButton": {
             "enabled": true,
-            "side": "left",
-            "order": 2,
-            "time": 10,
-            "suffix": false
+            "groupName": "settingsGroup",
+            "side": "right",
+            "menuTitle": "Settings",
+            "tabIndex": 6
+        },
+
+        "es.upv.paella.frameControlButtonPlugin": {
+            "enabled": true,
+            "side": "right",
+            "order": 102,
+            "tabIndex": 7
+        },
+
+        "es.upv.paella.fullscreenButton": {
+            "enabled": true,
+            "side": "right",
+            "order": 103,
+            "tabIndex": 8
+        },
+
+        "es.upv.paella.layoutSelector": {
+            "enabled": true,
+            "side": "right",
+            "order": 101,
+            "menuTitle": "Video Layout",
+            "parentContainer": "settingsGroup"
         },
 
         "es.upv.paella.customTimeProgressIndicator": {
@@ -290,13 +314,6 @@
             ],
             "side": "left",
             "order": 0
-        },
-
-        "ch.ethz.paella.settingsButton": {
-            "enabled": true,
-            "groupName": "settingsGroup",
-            "side": "right",
-            "menuTitle": "Settings"
         }
     }
 }
