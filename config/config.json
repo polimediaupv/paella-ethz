@@ -68,7 +68,8 @@
                 "presenter-presentation-dynamic",
                 "presenter-2-presentation-dynamic",
                 "presenter-presenter-2-dynamic"
-            ]
+            ],
+            "tabIndexStart": 40
         },
         "es.upv.paella.dualVideo": {
             "enabled": false,
@@ -76,14 +77,16 @@
                 { "id": "presenter-presentation", "content": ["presenter","presentation"], "icon": "present-mode-3.svg", "title": "Presenter and presentation" },
                 { "id": "presenter-2-presentation", "content": ["presenter-2","presentation"], "icon": "present-mode-3.svg", "title": "Presenter and presentation" },
                 { "id": "presenter-presenter-2", "content": ["presenter","presenter-2"], "icon": "present-mode-3.svg", "title": "Presenter and presentation" }
-            ]
+            ],
+            "tabIndexStart": 40
         },
         "es.upv.paella.tripleVideo": {
             "enabled": true,
             "validContent": [
                 { "id": "presenter-presenter-2-presentation", "content": ["presenter","presenter-2","presentation"], "icon": "present-mode-4.svg", "title": "Presenter and presentation" },
                 { "id": "presenter-2-presenter-3-presentation", "content": ["presenter-2","presenter-3","presentation"], "icon": "present-mode-4.svg", "title": "Presenter and presentation" }
-            ]
+            ],
+            "tabIndexStart": 40
         },
         
         "ch.ethz.paella.dualVideoLayout": {
@@ -92,7 +95,8 @@
                 { "id": "presenter-presentation", "content": ["presentation", "presenter"], "icon": "present-mode-3.svg", "title": "Presenter and presentation" },
                 { "id": "presenter-2-presentation", "content": ["presentation", "presenter-2"], "icon": "present-mode-3.svg", "title": "Presenter and presentation" },
                 { "id": "presenter-presenter-2", "content": ["presenter","presenter-2"], "icon": "present-mode-3.svg", "title": "Presenter and presentation" }
-            ]
+            ],
+            "tabIndexStart": 40
         },
 
         "es.upv.paella.dualVideoDynamic": {
@@ -101,7 +105,8 @@
                 { "id": "presenter-presentation-dynamic", "content": ["presentation","presenter"], "icon": "present-mode-3.svg", "title": "Presenter and presentation" },
                 { "id": "presenter-2-presentation-dynamic", "content": ["presenter-2","presentation"], "icon": "present-mode-3.svg", "title": "Presenter and presentation" },
                 { "id": "presenter-presenter-2-dynamic", "content": ["presenter","presenter-2"], "icon": "present-mode-3.svg", "title": "Presenter and presentation" }
-            ]
+            ],
+            "tabIndexStart": 40
         },
         
         "es.upv.paella.hlsVideoFormat": {
@@ -191,18 +196,14 @@
             "tabIndex": 6
         },
 
-        "es.upv.paella.frameControlButtonPlugin": {
+        "es.upv.paella.keyboardShortcutsHelp": {
             "enabled": true,
+            "order": 80,
+            "description": "Keyboard Shortcuts",
             "side": "right",
-            "order": 102,
+            "parentContainer": "settingsGroup",
+            "closeParentPopUp": true,
             "tabIndex": 7
-        },
-
-        "es.upv.paella.fullscreenButton": {
-            "enabled": true,
-            "side": "right",
-            "order": 103,
-            "tabIndex": 8
         },
 
         "es.upv.paella.layoutSelector": {
@@ -211,8 +212,25 @@
             "order": 101,
             "menuTitle": "Video Layout",
             "parentContainer": "settingsGroup",
-            "closeParentPopUp": true
+            "closeParentPopUp": true,
+            "tabIndex": 8
         },
+
+        "es.upv.paella.frameControlButtonPlugin": {
+            "enabled": true,
+            "side": "right",
+            "order": 102,
+            "tabIndex": 9
+        },
+
+        "es.upv.paella.fullscreenButton": {
+            "enabled": true,
+            "side": "right",
+            "order": 103,
+            "tabIndex": 10
+        },
+
+
 
         "es.upv.paella.customTimeProgressIndicator": {
             "enabled": true,
@@ -283,14 +301,6 @@
             ]
         },
 
-        "es.upv.paella.keyboardShortcutsHelp": {
-            "enabled": true,
-            "order": 80,
-            "description": "Keyboard Shortcuts",
-            "side": "right",
-            "parentContainer": "settingsGroup",
-            "closeParentPopUp": true
-        },
 
         "es.upv.paella.userEventTracker": {
             "enabled": true,
