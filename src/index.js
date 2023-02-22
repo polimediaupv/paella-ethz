@@ -25,6 +25,8 @@ import VolumeMidIcon from "./icons/volume-mid-icon.svg";
 import VolumeLowIcon from "./icons/volume-low-icon.svg";
 import VolumeMuteIcon from "./icons/volume-mute-icon.svg";
 
+import dictionary from "./dictionary.json";
+
 window.onload = async () => {
     const initParams = {
         customPluginContext: [
@@ -52,6 +54,9 @@ window.onload = async () => {
     let paella = new PaellaPlayer('player-container', initParams);
 
     try {
+        for (const lang in dictionary) {
+            paella.addDictionary(lang, dictionary[lang]);
+        }
         await paella.loadManifest()
         
         await utils.loadStyle('style.css');
