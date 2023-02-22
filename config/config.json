@@ -193,7 +193,8 @@
             "groupName": "settingsGroup",
             "side": "right",
             "menuTitle": "Settings",
-            "tabIndex": 6
+            "tabIndex": 6,
+            "popUpType": "modal"
         },
 
         "es.upv.paella.keyboardShortcutsHelp": {
