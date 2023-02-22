@@ -1,3 +1,7 @@
+@font-face {
+    font-family: roboto;
+    src: url(Roboto-Regular.ttf);
+  }
 
 :root {
     --main-bg-color: #1F2937;
@@ -11,6 +15,24 @@
     --base-video-rect-background-color: #9CA3AF;
 }
 
+#player-container {
+    width: 90vw;
+    height: 90vh;
+    left: 5vw;
+    top: 5vh;
+    position: relative;
+    font-family: roboto;
+    font-weight: 700;
+}
+
+button {
+    font-family: roboto;
+    font-weight: 700;
+}
+
+.playback-bar {
+    user-select: none;
+}
 
 .video-container {
     background-color: #9CA3AF;
