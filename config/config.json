@@ -16,17 +16,31 @@
         "showRemainingProgress": true
     },
 
+    "preferences": {
+        "currentSource": "cookie",
+        "sources": {
+            "cookie": {
+                "consentType": "necessary"
+            },
+            "dataPlugin": {
+                "context": "preferences"
+            }
+        }
+    },
+
     "videoContainer": {
         "overPlaybackBar": true,
 
         "restorePlaybackRate": true,
         "restoreVolume": true,
+        "restoreVideoLayout": {
+            "enabled": true,
+            "global": true
+        },
         "restoreLastTime": {
             "enabled": true,
             "remainingSeconds": 5
-        },
-
-        "cookieConsentType": "necessary"
+        }
     },
 
     "cookieConsent": [

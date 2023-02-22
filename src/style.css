@@ -31,7 +31,12 @@ button {
 }
 
 .playback-bar {
+    -webkit-user-select: none;
     user-select: none;
+}
+
+.playback-bar .button-plugins .button-plugin-container div.non-interactive {
+    margin-top: -2px;
 }
 
 .video-container {
