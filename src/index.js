@@ -67,6 +67,8 @@ window.onload = async () => {
 		paella.addCustomPluginIcon("es.upv.paella.volumeButtonPlugin","volumeLowIcon",VolumeLowIcon);
 		paella.addCustomPluginIcon("es.upv.paella.volumeButtonPlugin","volumeMuteIcon",VolumeMuteIcon);
 
+        //// play button
+        paella.addCustomPluginIcon("es.upv.paella.playPauseButton","play",PlayIcon);
 		//// quality selector
 		//paella.addCustomPluginIcon("es.upv.paella.qualitySelector","screenIcon",screenIcon);
 
