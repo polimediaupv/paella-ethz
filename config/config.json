@@ -190,7 +190,7 @@
             "side": "left",
             "order": 4,
             "showIcon": false,
-            "rates": [0.75, 1, 1.5, 2],
+            "rates": [0.75, 1, 1.25, 1.5, 2],
             "menuTitle": "Playback Rate",
             "tabIndex": 4
         },
@@ -305,7 +305,7 @@
         
         "es.upv.paella.defaultShortcuts": {
             "enabled": true,
-            "validPlaybackRates": [0.75, 1, 1.5, 2]
+            "validPlaybackRates": [0.75, 1, 1.25, 1.5, 2]
         },
 
         "es.upv.paella.arrowSlidesNavigator": {
