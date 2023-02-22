@@ -305,7 +305,7 @@
         
         "es.upv.paella.defaultShortcuts": {
             "enabled": true,
-            "validPlaybackRates": [0.75, 2, 1, 1.5]
+            "validPlaybackRates": [0.75, 1, 1.5, 2]
         },
 
         "es.upv.paella.arrowSlidesNavigator": {
