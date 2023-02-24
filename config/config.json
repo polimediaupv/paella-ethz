@@ -192,7 +192,8 @@
             "showIcon": false,
             "rates": [0.75, 1, 1.25, 1.5, 2],
             "menuTitle": "Playback Rate",
-            "tabIndex": 4
+            "tabIndex": 4,
+            "popUpType": "no-modal"
         },
 
         "es.upv.paella.volumeButtonPlugin": {
@@ -208,7 +209,7 @@
             "side": "right",
             "menuTitle": "Settings",
             "tabIndex": 6,
-            "popUpType": "modal"
+            "popUpType": "no-modal"
         },
 
         "es.upv.paella.keyboardShortcutsHelp": {
@@ -228,7 +229,8 @@
             "menuTitle": "Video Layout",
             "parentContainer": "settingsGroup",
             "closeParentPopUp": true,
-            "tabIndex": 8
+            "tabIndex": 8,
+            "popUpType": "no-modal"
         },
 
         "es.upv.paella.frameControlButtonPlugin": {
