@@ -193,7 +193,7 @@
             "rates": [0.75, 1, 1.25, 1.5, 2],
             "menuTitle": "Playback Rate",
             "tabIndex": 4,
-            "popUpType": "no-modal"
+            "popUpType": "modal"
         },
 
         "es.upv.paella.volumeButtonPlugin": {
@@ -209,7 +209,7 @@
             "side": "right",
             "menuTitle": "Settings",
             "tabIndex": 6,
-            "popUpType": "no-modal"
+            "popUpType": "modal"
         },
 
         "es.upv.paella.keyboardShortcutsHelp": {
@@ -230,7 +230,7 @@
             "parentContainer": "settingsGroup",
             "closeParentPopUp": true,
             "tabIndex": 8,
-            "popUpType": "no-modal"
+            "popUpType": "modal"
         },
 
         "es.upv.paella.frameControlButtonPlugin": {
