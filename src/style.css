@@ -35,6 +35,10 @@ button {
     user-select: none;
 }
 
+.progress-indicator-container {
+	forced-color-adjust: none;
+}
+
 .playback-bar .button-plugins .button-plugin-container div.non-interactive {
     margin-top: -2px;
 }
