@@ -30,6 +30,10 @@ button {
     font-weight: 700;
 }
 
+.player-container button:focus-visible {
+    outline-color: #b83098;
+}
+
 .playback-bar {
     -webkit-user-select: none;
     user-select: none;
