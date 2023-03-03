@@ -30,8 +30,9 @@ button {
     font-weight: 700;
 }
 
+
 .player-container button:focus-visible {
-    outline-color: #0046b7;
+    outline-color: #DD3A8B
 }
 
 .playback-bar {
