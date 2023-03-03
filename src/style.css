@@ -31,7 +31,7 @@ button {
 }
 
 .player-container button:focus-visible {
-    outline-color: #b83098;
+    outline-color: #0046b7;
 }
 
 .playback-bar {
