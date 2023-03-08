@@ -30,6 +30,11 @@ button {
     font-weight: 700;
 }
 
+
+.player-container button:focus-visible {
+    outline-color: #DD3A8B
+}
+
 .playback-bar {
     -webkit-user-select: none;
     user-select: none;
@@ -106,4 +111,12 @@ button {
 
 .playback-bar .button-plugins.right-side {
     margin-right: 5px;
+}
+
+.playback-bar .button-plugins .button-plugin-container button[name="es.upv.paella.backwardButtonPlugin"] div{
+    margin-top: -10px;;
+}
+
+.playback-bar .button-plugins .button-plugin-container button[name="es.upv.paella.forwardButtonPlugin"] div{
+    margin-top: -10px;;
 }

@@ -12,6 +12,7 @@
         "ArrowLeft": "Left",
         "ArrowRight": "Right",
         "KeyU": "U",
-        "KeyO": "O"
+        "KeyO": "O",
+        "Rewind $1 seconds": "Ir hacia atrás $1 segundos"
     }
 }
