@@ -35,7 +35,7 @@
 		"paella-core": "^1.22.1",
 		"paella-basic-plugins": "^1.22.1",
 		"paella-slide-plugins": "^1.8.0",
-		"paella-zoom-plugin": "^1.2.0",
+		"paella-zoom-plugin": "^1.2.1",
 		"paella-user-tracking": "^1.8.0",
 		"paella-layout-plugins": "^1.8.0"
 	}

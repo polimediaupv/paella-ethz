@@ -3,6 +3,8 @@
     "manifestFileName": "data.json",
 
     "defaultLayout": "presenter",
+
+    "defaultLanguage": "en",
    
     "logLevel": "INFO",
 
