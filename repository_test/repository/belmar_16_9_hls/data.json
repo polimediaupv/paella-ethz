@@ -1,0 +1,34 @@
+{
+	"metadata": {
+		"duration": 900,
+		"title": "Belmar 16:9 - 15 minutes (hls)",
+		"preview": "https://repository.paellaplayer.upv.es/belmar_16_9_hls/preview.png"
+	},
+	"streams": [
+		{
+			"sources": {
+				"hls": [
+					{
+						"src": "https://repository.paellaplayer.upv.es/belmar_16_9_hls/SCREEN.m3u8",
+						"mimetype": "video/mp4"
+					}
+				]
+				
+			},
+			"content":"presentation"
+		},
+		{
+			"sources": {
+				"hls": [
+					{
+						"src": "https://repository.paellaplayer.upv.es/belmar_16_9_hls/PRESENTER.m3u8",
+						"mimetype": "video/mp4"
+					}
+				]
+			},
+			"content":"presenter",
+			"audioTag":"es"
+		}
+	],
+	"frameList": []
+}
