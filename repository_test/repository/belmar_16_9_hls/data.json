@@ -30,5 +30,34 @@
 			"audioTag":"es"
 		}
 	],
-	"frameList": []
+	"frameList": [
+        {
+            "mimetype": "image/jpg",
+            "url": "https://repository.paellaplayer.upv.es/belmar_16_9_hls/framelist/frame.0.jpg",
+            "id": "frame_0",
+            "thumb": "https://repository.paellaplayer.upv.es/belmar_16_9_hls/framelist/thumb.0.jpg",
+            "time": 0
+        },
+        {
+            "mimetype": "image/jpg",
+            "url": "https://repository.paellaplayer.upv.es/belmar_16_9_hls/framelist/frame.420.jpg",
+            "id": "frame_420",
+            "thumb": "https://repository.paellaplayer.upv.es/belmar_16_9_hls/framelist/thumb.420.jpg",
+            "time": 420
+        },
+        {
+            "mimetype": "image/jpg",
+            "url": "https://repository.paellaplayer.upv.es/belmar_16_9_hls/framelist/frame.660.jpg",
+            "id": "frame_660",
+            "thumb": "https://repository.paellaplayer.upv.es/belmar_16_9_hls/framelist/thumb.660.jpg",
+            "time": 660
+        },
+        {
+            "mimetype": "image/jpg",
+            "url": "https://repository.paellaplayer.upv.es/belmar_16_9_hls/framelist/frame.870.jpg",
+            "id": "frame_870",
+            "thumb": "https://repository.paellaplayer.upv.es/belmar_16_9_hls/framelist/thumb.870.jpg",
+            "time": 870
+        }
+    ]
 }
