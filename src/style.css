@@ -120,3 +120,7 @@ button {
 .playback-bar .button-plugins .button-plugin-container button[name="es.upv.paella.forwardButtonPlugin"] div{
     margin-top: -10px;;
 }
+
+.frame-control-plugin-container .image-list img {
+    width: 160px;
+}
