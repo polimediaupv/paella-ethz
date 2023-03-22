@@ -111,8 +111,8 @@ window.onload = async () => {
        paella.addCustomPluginIcon("es.upv.paella.frameControlButtonPlugin","photoIcon",SlidesIcon);
 
        //// slide navigation
-       paella.addCustomPluginIcon("es.upv.paella.nextSlideNavigatorButton","arrowRightIcon", PrevIcon);
-       paella.addCustomPluginIcon("es.upv.paella.prevSlideNavigatorButton","arrowLeftIcon", NextIcon);
+       paella.addCustomPluginIcon("es.upv.paella.nextSlideNavigatorButton","arrowRightIcon", NextIcon);
+       paella.addCustomPluginIcon("es.upv.paella.prevSlideNavigatorButton","arrowLeftIcon", PrevIcon);
 
        
     }
