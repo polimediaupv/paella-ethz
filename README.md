@@ -24,3 +24,8 @@ Then open the following URL in a browser:
 
 Documentation lives here:
 [https://github.com/polimediaupv/paella-core/blob/main/doc/index.md]
+
+## Demos
+
+- [two multiquality 16:9 videos](https://polimediaupv.github.io/paella-ethz/?id=belmar_16_9_hls)
+- [4:3 presentation video + 16:9 presenter](https://polimediaupv.github.io/paella-ethz/?id=belmar-multiresolution-remote)
