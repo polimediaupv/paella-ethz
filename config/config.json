@@ -1,4 +1,5 @@
 {
+    "fallbackId": "belmar-multiresolution-remote",
     "repositoryUrl": "repository",
     "manifestFileName": "data.json",
 
