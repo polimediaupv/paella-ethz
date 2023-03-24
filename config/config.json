@@ -47,6 +47,11 @@
         "restoreLastTime": {
             "enabled": true,
             "remainingSeconds": 5
+        },
+
+        "dynamicLayout": {
+            "landscapeVerticalAlignment": "align-bottom",
+            "portraitHorizontalAlignment": "align-center"
         }
     },
 
@@ -127,7 +132,8 @@
                 { "id": "presenter-2-presentation-dynamic", "content": ["presenter-2","presentation"], "icon": "present-mode-3.svg", "title": "Presenter and presentation" },
                 { "id": "presenter-presenter-2-dynamic", "content": ["presenter","presenter-2"], "icon": "present-mode-3.svg", "title": "Presenter and presentation" }
             ],
-            "tabIndexStart": 40
+            "tabIndexStart": 40,
+            "allowSwitchSide": false
         },
         
         "es.upv.paella.hlsVideoFormat": {
