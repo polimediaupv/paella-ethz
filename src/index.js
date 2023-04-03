@@ -74,9 +74,12 @@ window.onload = async () => {
 
         //// layout icons
         paella.addCustomPluginIcon("es.upv.paella.dualVideoDynamic","iconMaximize", MaximizeIcon);
+        paella.addCustomPluginIcon("es.upv.paella.dualVideoDynamic","iconMimimize", MinimizeIcon);
+        paella.addCustomPluginIcon("es.upv.paella.dualVideoDynamic","iconClose", CloseIcon);
+        
 
         //// play button
-        paella.addCustomPluginIcon("es.upv.paella.playPauseButton","play",PlayIcon);
+        paella.addCustomPluginIcon("es.upv.paella.playPauseButton","play", PlayIcon);
 		//// quality selector
 		//paella.addCustomPluginIcon("es.upv.paella.qualitySelector","screenIcon",screenIcon);
 
