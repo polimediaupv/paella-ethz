@@ -4,6 +4,7 @@
   }
 
 :root {
+    --main-fg-color: #F9FAFB;
     --main-bg-color: #1F2937;
     --main-bg-color-hover: #1F2937;
     --main-bg-gradient: #1F2937;
@@ -77,23 +78,11 @@ button {
 }
 
 .video-canvas .button-area button {
-    background-color: var(--highlight-bg-color);
+    background-color: var(--highlight-bg-color-hover);
     width: 32px;
     height: 32px;
     box-sizing: border-box;
-    padding: 6px;
-}
-
-.video-canvas .button-area button {
-    background-color: var(--highlight-bg-color-hover);
-}
-
-.video-canvas .button-area button svg path {
-    fill: #F9FAFB;
-}
-
-.playback-bar .button-plugins button i svg {
-    fill: #F9FAFB;
+    padding: 4px;
 }
 
 .playback-bar .button-plugins .button-plugin-container button {
