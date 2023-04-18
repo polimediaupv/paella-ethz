@@ -176,7 +176,7 @@
         "es.upv.paella.playPauseButton": {
             "enabled": true,
             "order": 0,
-            "description": "Play and pause button",
+            "description": "Play/pause",
             "tabIndex": 1
         },
 
@@ -228,7 +228,7 @@
         "es.upv.paella.keyboardShortcutsHelp": {
             "enabled": true,
             "order": 80,
-            "description": "Keyboard Shortcuts",
+            "description": "Keyboard shortcuts",
             "side": "right",
             "parentContainer": "settingsGroup",
             "closeParentPopUp": true,
@@ -240,7 +240,7 @@
             "enabled": true,
             "side": "right",
             "order": 101,
-            "menuTitle": "Video Layout",
+            "menuTitle": "Video layout",
             "parentContainer": "settingsGroup",
             "closeParentPopUp": true,
             "tabIndex": 8,
