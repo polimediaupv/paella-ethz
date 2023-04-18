@@ -59,5 +59,25 @@
             "thumb": "https://repository.paellaplayer.upv.es/belmar_16_9_hls/framelist/thumb.870.jpg",
             "time": 870
         }
-    ]
+    ],
+	"captions": [
+		{
+			"lang": "de",
+			"text": "Deutsch (automatische Übersetzung)",
+			"format": "vtt",
+			"url": "captions.de.vtt"
+		},
+		{
+			"lang": "en",
+			"text": "English (automatic transcription)",
+			"format": "vtt",
+			"url": "captions.en.vtt"
+		},
+		{
+			"lang": "es",
+			"text": "Español (traducción automática)",
+			"format": "vtt",
+			"url": "captions.es.vtt"
+		}
+	]
 }
