@@ -20,6 +20,7 @@ import SettingsIcon from "./icons/settings-icon.svg";
 import NextIcon from "./icons/slide-next-icon.svg";
 import PrevIcon from "./icons/slide-prev-icon.svg";
 import SlidesIcon from "./icons/slides-icon.svg";
+import ViewModeIcon from "./icons/view-mode.svg";
 import VolumeHighIcon from "./icons/volume-base-icon.svg";
 import VolumeMidIcon from "./icons/volume-mid-icon.svg";
 import VolumeLowIcon from "./icons/volume-low-icon.svg";
@@ -87,13 +88,13 @@ window.onload = async () => {
 		//paella.addCustomPluginIcon("es.upv.paella.playbackRateButton","screenIcon",screenIcon);
 
 		//// layout selector
-		//paella.addCustomPluginIcon("es.upv.paella.layoutSelector","layoutIcon",SettingsIcon);
+		paella.addCustomPluginIcon("es.upv.paella.layoutSelector","layoutIcon", ViewModeIcon);
 
 		//// backward 30 segonds
-		paella.addCustomPluginIcon("es.upv.paella.backwardButtonPlugin","backwardIcon",BackwardIcon);
+		paella.addCustomPluginIcon("es.upv.paella.backwardButtonPlugin","backwardIcon", BackwardIcon);
 
 		//// forward 30 segonds
-		paella.addCustomPluginIcon("es.upv.paella.forwardButtonPlugin","forwardIcon",ForwardIcon);
+		paella.addCustomPluginIcon("es.upv.paella.forwardButtonPlugin","forwardIcon", ForwardIcon);
 
 		//// keyboard icon
 		//paella.addCustomPluginIcon("es.upv.paella.keyboardShortcutsHelp","keyboardIcon",keyboardIcon);

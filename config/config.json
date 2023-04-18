@@ -6,7 +6,9 @@
     "defaultLayout": "presenter",
 
     "defaultLanguage": "en",
-   
+    "defaultVideoPreview": "/config/default_preview_landscape.jpg",
+    "defaultVideoPreviewPortrait": "/config/default_preview_portrait.jpg",
+
     "logLevel": "INFO",
 
     "accessibility": {
@@ -176,8 +178,8 @@
         "es.upv.paella.playPauseButton": {
             "enabled": true,
             "order": 0,
-            "description": "Play and pause button",
-            "tabIndex": 1
+            "tabIndex": 1,
+            "description": "Play/pause"
         },
 
         "es.upv.paella.backwardButtonPlugin": {
@@ -204,16 +206,18 @@
             "order": 4,
             "showIcon": false,
             "rates": [0.75, 1, 1.25, 1.5, 2],
-            "menuTitle": "Playback Rate",
+            "menuTitle": "Playback rate",
             "tabIndex": 4,
-            "popUpType": "no-modal"
+            "popUpType": "no-modal",
+            "description": "Playback rate"
         },
 
         "es.upv.paella.volumeButtonPlugin": {
             "enabled": true,
             "side": "left",
             "order": 5,
-            "tabIndex": 5
+            "tabIndex": 5,
+            "description": "Volume"
         },
 
         "ch.ethz.paella.settingsButton": {
@@ -222,13 +226,14 @@
             "side": "right",
             "menuTitle": "Settings",
             "tabIndex": 6,
-            "popUpType": "no-modal"
+            "popUpType": "no-modal",
+            "description": "Settings"
         },
 
         "es.upv.paella.keyboardShortcutsHelp": {
             "enabled": true,
             "order": 80,
-            "description": "Keyboard Shortcuts",
+            "description": "Keyboard shortcuts",
             "side": "right",
             "parentContainer": "settingsGroup",
             "closeParentPopUp": true,
@@ -240,28 +245,35 @@
             "enabled": true,
             "side": "right",
             "order": 101,
-            "menuTitle": "Video Layout",
-            "parentContainer": "settingsGroup",
+            "menuTitle": "Video layout",
             "closeParentPopUp": true,
             "tabIndex": 8,
-            "popUpType": "no-modal"
+            "popUpType": "no-modal",
+            "description": "Video layout"
         },
 
         "es.upv.paella.frameControlButtonPlugin": {
             "enabled": true,
             "side": "right",
             "order": 102,
-            "tabIndex": 9
+            "tabIndex": 9,
+            "description": "Show slides"
+        },
+
+        "es.upv.paella.captionsSelectorPlugin": {
+            "enabled": true,
+            "side": "right",
+            "order": 103,
+            "tabIndex": 10,
+            "description": "Captions"
         },
 
         "es.upv.paella.fullscreenButton": {
             "enabled": true,
             "side": "right",
-            "order": 103,
-            "tabIndex": 10
+            "order": 104,
+            "tabIndex": 11
         },
-
-
 
         "es.upv.paella.customTimeProgressIndicator": {
             "enabled": true,
@@ -302,16 +314,11 @@
             "enabled": true
         },
 
-        "es.upv.paella.captionsSelectorPlugin": {
-            "enabled": true,
-            "side": "right",
-            "parentContainer": "videoContainer"
-        },
-
         "es.upv.paella.qualitySelector": {
             "enabled": true,
             "side": "right",
-            "parentContainer": "settingsGroup"
+            "parentContainer": "settingsGroup",
+            "description": "Video quality"
         },
 
         "es.upv.paella.audioSelector": {
@@ -358,7 +365,7 @@
         },
 
         "es.upv.paella.debug.userTrackingDataPlugin": {
-            "enabled": true,
+            "enabled": false,
             "context": [
                 "userTracking"
             ]

@@ -113,3 +113,7 @@ button {
 .frame-control-plugin-container .image-list img {
     width: 160px;
 }
+
+.volume-slider {
+    background-color: var(--highlight-bg-color-hover);
+}
