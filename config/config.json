@@ -26,7 +26,7 @@
     },
 
     "preferences": {
-        "currentSource": "cookie",
+        "currentSource": "preferences",
         "sources": {
             "cookie": {
                 "consentType": "necessary"
@@ -43,7 +43,7 @@
         "restorePlaybackRate": true,
         "restoreVolume": true,
         "restoreVideoLayout": {
-            "enabled": true,
+            "enabled": false,
             "global": true
         },
         "restoreLastTime": {
@@ -304,7 +304,7 @@
         "es.upv.paella.cookieDataPlugin": {
             "enabled": true,
             "order": 0,
-            "context": ["default","trimming"]
+            "context": ["default","trimming","preferences"]
         },
 
         "es.upv.paella.vttManifestCaptionsPlugin": {
