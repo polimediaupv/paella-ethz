@@ -249,7 +249,8 @@
             "closeParentPopUp": true,
             "tabIndex": 8,
             "popUpType": "no-modal",
-            "description": "Video layout"
+            "description": "Video layout",
+            "showIcons": false
         },
 
         "es.upv.paella.frameControlButtonPlugin": {
@@ -318,12 +319,15 @@
             "enabled": true,
             "side": "right",
             "parentContainer": "settingsGroup",
-            "description": "Video quality"
+            "description": "Video quality",
+            "showIcon": false
         },
 
         "es.upv.paella.audioSelector": {
             "enabled": true,
-            "side": "right"
+            "side": "right",
+            "showIcon": false,
+            "menuTitle": "Audio track"
         },
         
         "es.upv.paella.defaultShortcuts": {
