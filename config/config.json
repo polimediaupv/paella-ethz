@@ -1,13 +1,13 @@
 {
-    "fallbackId": "belmar-multiresolution-remote",
+    "fallbackId": "belmar_16_9_hls",
     "repositoryUrl": "repository",
     "manifestFileName": "data.json",
 
     "defaultLayout": "presenter",
 
     "defaultLanguage": "en",
-    "defaultVideoPreview": "/config/default_preview_landscape.jpg",
-    "defaultVideoPreviewPortrait": "/config/default_preview_portrait.jpg",
+    "defaultVideoPreview": "config/default_preview_landscape.jpg",
+    "defaultVideoPreviewPortrait": "config/default_preview_portrait.jpg",
 
     "logLevel": "INFO",
 
