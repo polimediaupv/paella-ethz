@@ -31,9 +31,15 @@ button {
     font-weight: 700;
 }
 
-
+/* 
+#800080
+#cc00cc - 20%
+#f200f2 - 30%
+#ff19ff - 40%
+#ff40ff - 50%
+*/
 .player-container button:focus-visible {
-    outline-color: #800080;
+    outline-color: #cc00cc;
 }
 
 .playback-bar {
