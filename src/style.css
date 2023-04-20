@@ -31,9 +31,15 @@ button {
     font-weight: 700;
 }
 
-
+/* 
+#800080
+#cc00cc - 20%
+#f200f2 - 30%
+#ff19ff - 40%
+#ff40ff - 50%
+*/
 .player-container button:focus-visible {
-    outline-color: #DD3A8B
+    outline-color: #cc00cc;
 }
 
 .playback-bar {
@@ -50,7 +56,7 @@ button {
 }
 
 .video-container {
-    background-color: #9CA3AF;
+    background-color: white;
 }
 
 .progress-indicator {
@@ -113,3 +119,32 @@ button {
 .frame-control-plugin-container .image-list img {
     width: 160px;
 }
+
+.volume-slider {
+    background-color: var(--highlight-bg-color-hover);
+}
+
+.button-group .button-plugin-container button[name="es.upv.paella.qualitySelector"] {
+    padding: 0;
+}
+
+/*
+.button-group button.dynamic-width span {
+    margin-top: 0px;
+    color: var(--main-fg-color);
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.button-group button.dynamic-width span.button-title-small {
+    margin-top: 0px;
+}
+
+.button-group button.dynamic-width span.button-title-medium {
+    margin-top: 0px;
+}
+
+.button-group button.dynamic-width span.button-title-large {
+    margin-top: 0px;
+}
+*/
