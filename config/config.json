@@ -273,7 +273,8 @@
             "enabled": true,
             "side": "right",
             "order": 104,
-            "tabIndex": 11
+            "tabIndex": 11,
+            "description": "Fullscreen"
         },
 
         "es.upv.paella.customTimeProgressIndicator": {
