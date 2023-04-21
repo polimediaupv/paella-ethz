@@ -1,7 +1,7 @@
 @font-face {
     font-family: roboto;
     src: url(Roboto-Regular.ttf);
-  }
+}
 
 :root {
     --main-fg-color: #F9FAFB;
@@ -23,12 +23,16 @@
     top: 5vh;
     position: relative;
     font-family: roboto;
-    font-weight: 700;
+    font-weight: 600;
 }
 
+
+.button-group .button-plugin-wrapper .button-description,
+.button-group-title,
+.menu-button-title,
 button {
     font-family: roboto;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 /* 
