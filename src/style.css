@@ -124,10 +124,6 @@ button {
     width: 160px;
 }
 
-.volume-slider {
-    background-color: var(--highlight-bg-color-hover);
-}
-
 .button-group .button-plugin-container button[name="es.upv.paella.qualitySelector"] {
     padding: 0;
 }
