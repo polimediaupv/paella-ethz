@@ -39,7 +39,7 @@ button {
 #ff40ff - 50%
 */
 .player-container button:focus-visible {
-    outline-color: #cc00cc;
+    outline-color: #f200f2;
 }
 
 .playback-bar {
