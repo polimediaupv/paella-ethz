@@ -62,7 +62,7 @@ window.onload = async () => {
         
         await utils.loadStyle('style.css');
         
-       //// Customized icon tests
+        //// Customized icon tests
 		//// fullscreen 
 		paella.addCustomPluginIcon("es.upv.paella.fullscreenButton","fullscreenIcon",FullscreenIcon);
 		//paella.addCustomPluginIcon("es.upv.paella.fullscreenButton","windowedIcon",windowedIcon);
@@ -111,12 +111,12 @@ window.onload = async () => {
 		//// captions icon
 		paella.addCustomPluginIcon("es.upv.paella.captionsSelectorPlugin","captionsIcon",CaptionsIcon);
 
-       //// slides icon
-       paella.addCustomPluginIcon("es.upv.paella.frameControlButtonPlugin","photoIcon",SlidesIcon);
+        //// slides icon
+        paella.addCustomPluginIcon("es.upv.paella.frameControlButtonPlugin","photoIcon",SlidesIcon);
 
-       //// slide navigation
-       paella.addCustomPluginIcon("es.upv.paella.nextSlideNavigatorButton","arrowRightIcon", NextIcon);
-       paella.addCustomPluginIcon("es.upv.paella.prevSlideNavigatorButton","arrowLeftIcon", PrevIcon);
+        //// slide navigation
+        paella.addCustomPluginIcon("es.upv.paella.nextSlideNavigatorButton","arrowRightIcon", NextIcon);
+        paella.addCustomPluginIcon("es.upv.paella.prevSlideNavigatorButton","arrowLeftIcon", PrevIcon);
 
        
     }
