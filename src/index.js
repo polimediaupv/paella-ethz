@@ -55,10 +55,11 @@ window.onload = async () => {
     let paella = new PaellaPlayer('player-container', initParams);
 
     try {
+        
+        await paella.loadManifest()
         for (const lang in dictionary) {
             paella.addDictionary(lang, dictionary[lang]);
         }
-        await paella.loadManifest()
         
         await utils.loadStyle('style.css');
         

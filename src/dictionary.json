@@ -13,6 +13,9 @@
         "ArrowRight": "Right",
         "KeyU": "U",
         "KeyO": "O",
-        "Rewind $1 seconds": "Go backwards $1 seconds"
+        "Rewind $1 seconds": "Go backwards $1 seconds",
+        "Maximize video": "Enlarge video",
+        "Dual stream 50%": "Align videos",
+        "Two videos 50%": "Two videos aligned"
     }
 }
