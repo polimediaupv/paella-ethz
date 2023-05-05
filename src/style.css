@@ -44,6 +44,8 @@ button {
 */
 .player-container button:focus-visible {
     outline-color: #f200f2;
+    outline-style: solid;
+    outline-width: 2px;
 }
 
 .playback-bar {
@@ -148,3 +150,7 @@ button {
     margin-top: 0px;
 }
 */
+
+button[name="es.upv.paella.volumeButtonPlugin"]:focus-visible + .button-plugin-side-area {
+    display: inline-block !important;
+}
