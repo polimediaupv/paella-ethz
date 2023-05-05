@@ -150,7 +150,3 @@ button {
     margin-top: 0px;
 }
 */
-
-button[name="es.upv.paella.volumeButtonPlugin"]:focus-visible + .button-plugin-side-area {
-    display: inline-block !important;
-}

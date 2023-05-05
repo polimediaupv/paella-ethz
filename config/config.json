@@ -217,7 +217,8 @@
             "side": "left",
             "order": 5,
             "tabIndex": 5,
-            "description": "Volume"
+            "description": "Volume",
+            "volumeAlwaysVisible": true
         },
 
         "ch.ethz.paella.settingsButton": {
