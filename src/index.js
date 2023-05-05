@@ -27,8 +27,9 @@ import VolumeMidIcon from "./icons/volume-mid-icon.svg";
 import VolumeLowIcon from "./icons/volume-low-icon.svg";
 import VolumeMuteIcon from "./icons/volume-mute-icon.svg";
 
-import dictionary from "./dictionary.json";
+import dictionary from "./default-dictionaries.js";
 
+console.log(dictionary);
 window.onload = async () => {
     const initParams = {
         customPluginContext: [
