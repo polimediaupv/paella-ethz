@@ -13,6 +13,7 @@ import ForwardIcon from "./icons/forward-icon.svg";
 import CaptionsIcon from "./icons/captions-icon.svg";
 import CloseIcon from "./icons/close.svg";
 import FullscreenIcon from "./icons/fullscreen-icon.svg";
+import FullscreenExitIcon from "./icons/fullscreen-exit.svg";
 import MaximizeIcon from "./icons/maximize.svg";
 import MinimizeIcon from "./icons/minimize.svg";
 import PlayIcon from "./icons/play-icon.svg";
@@ -66,7 +67,7 @@ window.onload = async () => {
         //// Customized icon tests
 		//// fullscreen 
 		paella.addCustomPluginIcon("es.upv.paella.fullscreenButton","fullscreenIcon",FullscreenIcon);
-		//paella.addCustomPluginIcon("es.upv.paella.fullscreenButton","windowedIcon",windowedIcon);
+		paella.addCustomPluginIcon("es.upv.paella.fullscreenButton","windowedIcon", FullscreenExitIcon);
 
 		//// volume
 		paella.addCustomPluginIcon("es.upv.paella.volumeButtonPlugin","volumeHighIcon",VolumeHighIcon);
