@@ -22,13 +22,15 @@ window.onload = async () => {
             for (const lang in dictionary) {
               player.addDictionary(lang, dictionary[lang]);
             }
+            player.setLanguage(navigator.language.substring(0, 2));
         }
     };
     
-    let paella = new Paella('player-container', initParams);
-
     try {
+        const paella = new Paella('player-container', initParams);
+        // apply ETHZ theme
         await applyEthzTheme(paella);
+        // load Paella
         await paella.loadManifest()        
     }
     catch (e) {
