@@ -6,7 +6,6 @@ import getZoomPluginContext from 'paella-zoom-plugin';
 import getUserTrackingPluginContext from 'paella-user-tracking';
 
 import dictionary from "./default-dictionaries.js";
-import { applyEthzTheme } from './ethz-theme';
 
 
 window.onload = async () => {
@@ -29,7 +28,7 @@ window.onload = async () => {
     try {
         const paella = new Paella('player-container', initParams);
         // apply ETHZ theme
-        await applyEthzTheme(paella);
+        await paella.skin.loadSkin('ethz_theme/theme.json');
         // load Paella
         await paella.loadManifest()        
     }

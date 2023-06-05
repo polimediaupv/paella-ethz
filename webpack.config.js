@@ -63,11 +63,9 @@ module.exports = {
 	plugins: [
 		new CopyWebpackPlugin({
 			patterns: [
-				{ from: './config', to: 'config' },
-				{ from: './src/index.html', to: 'index.html' },
-				{ from: './repository_test/repository', to: 'repository' },
-				{ from: './src/style.css', to: 'style.css' },
-				{ from: './src/Roboto-Regular.ttf', to: 'Roboto-Regular.ttf' }
+				{ from: './public', to: '' },
+				{ from: './config', to: 'config' },				
+				{ from: './repository_test/repository', to: 'repository' }
 			]
 		})
 	],
