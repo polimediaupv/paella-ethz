@@ -41,7 +41,7 @@
         { "plugin": "es.upv.paella.volumeButtonPlugin","identifier": "volumeHighIcon", "icon": "./icons/volume-high.svg"},
         { "plugin": "es.upv.paella.volumeButtonPlugin","identifier": "volumeMidIcon", "icon": "./icons/volume-mid.svg"},
         { "plugin": "es.upv.paella.volumeButtonPlugin","identifier": "volumeLowIcon", "icon": "./icons/volume-low.svg"},
-        { "plugin": "es.upv.paella.volumeButtonPlugin","identifier": "volumeMuteIcon", "icon": "./icons/volume-mute.svg"},
+        { "plugin": "es.upv.paella.volumeButtonPlugin","identifier": "volumeMuteIcon", "icon": "./icons/volume-mute-cross.svg"},
 
         { "plugin": "es.upv.paella.dualVideoDynamic", "identifier": "iconMaximize", "icon": "./icons/maximize.svg" },
         { "plugin": "es.upv.paella.dualVideoDynamic", "identifier": "iconMimimize", "icon": "./icons/minimize.svg" },
