@@ -1,5 +1,7 @@
 {
     "Toggle audio mute": "Toggle mute",
     "Toggle play/pause": "Play/pause",
-    "Put the videos side by side": "Align videos"
+    "Put the videos side by side": "Align videos",
+    "Seek video to the previous slide": "Go to previous segment",
+    "Seek video to the next slide": "Go to next segment"
 }
