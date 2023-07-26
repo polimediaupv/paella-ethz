@@ -65,7 +65,8 @@ module.exports = {
 			patterns: [
 				{ from: './public', to: '' },
 				{ from: './config', to: 'config' },				
-				{ from: './repository_test/repository', to: 'repository' }
+				{ from: './repository_test/repository', to: 'repository' },
+				{ from: './node_modules/paella-skins/skins/opencast', to: 'skins/opencast' }
 			]
 		})
 	],

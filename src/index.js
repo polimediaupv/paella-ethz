@@ -27,8 +27,8 @@ window.onload = async () => {
     
     try {
         const paella = new Paella('player-container', initParams);
-        // apply ETHZ theme
-        await paella.skin.loadSkin('ethz_theme/theme.json');
+        // apply Opencast theme
+        await paella.skin.loadSkin('skins/opencast/theme.json');
         // load Paella
         await paella.loadManifest()        
     }
