@@ -267,7 +267,8 @@
             "side": "right",
             "order": 103,
             "tabIndex": 10,
-            "description": "Captions"
+            "description": "Captions",
+            "menuTitle": "Captions"
         },
 
         "es.upv.paella.fullscreenButton": {
